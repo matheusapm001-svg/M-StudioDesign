@@ -4361,11 +4361,21 @@ button.animate-btn::after,
   align-items: end;
 }
 .section-hero-v1 .davies-large {
-  font-size: clamp(48px, 12vw, 160px);
-  line-height: clamp(56px, 11vw, 148px);
+  width: max-content;
+  max-width: calc(100vw - 48px);
+  font-size: clamp(42px, 10.2vw, 148px);
+  line-height: clamp(48px, 9.8vw, 136px);
   font-weight: 550;
   letter-spacing: -0.06em;
   white-space: nowrap;
+}
+.section-hero-v1 .davies-large > div {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+.section-hero-v1 .davies-large .text-primary {
+  display: inline;
 }
 .section-hero-v1 .overlay {
   position: absolute;
@@ -6149,6 +6159,46 @@ button.animate-btn::after,
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
   backdrop-filter: blur(2px);
   z-index: 0;
+}
+@media (max-width: 767px) {
+  .section-feature .s-header {
+    gap: 20px;
+  }
+  .wg-feature-v01 .feature-image img {
+    min-height: 300px;
+    object-fit: cover;
+  }
+  .wg-feature-v01 .feature-content {
+    position: static;
+    display: block;
+    padding: 18px 0 0;
+  }
+  .wg-feature-v01 .feature-content::before {
+    content: none;
+  }
+  .wg-feature-v01 .feature-content .info {
+    margin-bottom: 14px;
+  }
+  .wg-feature-v01 .feature-content .tag {
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .wg-feature-v01 .feature-content .name {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .wg-feature-v01 .feature-content .price {
+    max-width: 100%;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+  }
+  .section-feature .group-btn-slider {
+    margin-top: 28px;
+    justify-content: flex-start;
+    gap: 24px;
+  }
 }
 
 .wg-process {
