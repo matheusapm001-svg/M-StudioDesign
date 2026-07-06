@@ -4784,6 +4784,31 @@ button.animate-btn::after,
   min-width: 109px;
   text-align: end;
 }
+@media (max-width: 767px) {
+  .experience-list {
+    gap: 22px;
+  }
+  .experience-list li {
+    display: block;
+  }
+  .experience-list .exp_role {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .experience-list .exp_details {
+    margin-top: 6px;
+    font-size: 17px;
+    line-height: 1.35;
+  }
+  .experience-list .exp_year {
+    display: block;
+    min-width: 0;
+    margin-top: 8px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
 
 .section-about-me-v2 .davies-video {
   position: relative;
