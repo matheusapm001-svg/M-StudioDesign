@@ -4407,6 +4407,9 @@ button.animate-btn::after,
 .section-hero-v1 .col-right .top {
   margin-bottom: 303px;
 }
+.section-hero-v1 .hero-availability {
+  white-space: nowrap;
+}
 .section-hero-v1 .col-right .desc {
   margin-bottom: 40px;
 }
