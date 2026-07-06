@@ -6161,29 +6161,28 @@ button.animate-btn::after,
   display: grid;
 }
 .wg-feature-v01 .feature-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 28px 28px 28px;
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
+  position: static;
+  display: block;
+  padding: 24px 0 0;
+}
+.wg-feature-v01 .feature-content .info {
+  margin-bottom: 16px;
 }
 .wg-feature-v01 .feature-content .tag {
   margin-bottom: 8px;
+}
+.wg-feature-v01 .feature-content .price {
+  max-width: 100%;
+  font-size: clamp(24px, 3vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
 }
 .wg-feature-v01 .feature-content > * {
   position: relative;
   z-index: 1;
 }
 .wg-feature-v01 .feature-content::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-  backdrop-filter: blur(2px);
-  z-index: 0;
+  content: none;
 }
 @media (max-width: 767px) {
   .section-feature .s-header {
@@ -6194,12 +6193,7 @@ button.animate-btn::after,
     object-fit: cover;
   }
   .wg-feature-v01 .feature-content {
-    position: static;
-    display: block;
     padding: 18px 0 0;
-  }
-  .wg-feature-v01 .feature-content::before {
-    content: none;
   }
   .wg-feature-v01 .feature-content .info {
     margin-bottom: 14px;
@@ -6214,10 +6208,8 @@ button.animate-btn::after,
     line-height: 40px;
   }
   .wg-feature-v01 .feature-content .price {
-    max-width: 100%;
     font-size: 24px;
     line-height: 31px;
-    letter-spacing: -0.02em;
   }
   .section-feature .group-btn-slider {
     margin-top: 28px;
