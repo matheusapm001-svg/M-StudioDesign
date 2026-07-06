@@ -1,0 +1,6 @@
+{
+  "buildCommand": "node vercel-build.js",
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": false
+}
